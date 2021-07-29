@@ -23,7 +23,7 @@ def Registrar():
     if texto1.get() and texto2.get() and texto3.get() and texto4.get() and texto5.get() and texto6.get():
         messagebox.showinfo("Nombre de Registro", texto1.get() + " " + texto2.get() + "\n" +  "\n" + texto3.get() +  " " + "años" + "\n" + "\n" +  "Correo:" + " " + texto4.get()+ "\n" + "\n" + "Contraseña:" + " " + texto5.get()+ "\n" + "\n" +  "Usuario:" +  " " + texto6.get() )
     else:
-        messagebox.showerror("Error")
+        messagebox.showerror("Error", "Es obligatorio llenar todos los campos")
 
 btn = Button(window, text="Registar", command=Registrar)
 lbl1.pack()
